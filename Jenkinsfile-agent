@@ -6,7 +6,7 @@ stages
 {
  stage('scm checkout')
  { agent { label 'MAVEN' }
-  steps { git branch: 'master', url: 'https://github.com/Vikram9929/mavenproject-master.git'}
+  steps { git branch: 'master', url: 'https://github.com/Vikram9929/mavenproject-master.git'}}
 
 
  stage('code compile')
