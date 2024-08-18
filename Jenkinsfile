@@ -34,7 +34,7 @@ stages
    { steps { sshagent(['deploy-to-tomcat']) 
     {
       input 'Do you approve deployment?'              // Conditional delivery
-      sh 'scp -o StrictHostKeyChecking=no webapp/target/webapp.war ec2-user@172.31.20.221:/usr/share/tomcat/webapps'
+      sh 'scp -o StrictHostKeyChecking=no webapp/target/webapp.war ec2-user@18.139.219.124:/usr/share/tomcat/webapps'
             }
       }
     }
